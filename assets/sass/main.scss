@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+//Set font
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+//Set color
+$discord-black: #23272A;
+$discord-dark: #2C2F33;
+$discord-grey: #99AAB5;
+$discord-white: #FFFFFF;
+$discord-blue: #7289DA;
+
+$primary: $discord-blue;
+$light: $discord-grey;
+$black: $discord-black;
+$dark: $discord-dark;
+$white: $discord-white;
+
+$navbar-dropdown-background-color: $dark;
+$navbar-dropdown-arrow: $white;
+$navbar-dropdown-item-hover-color: $dark;
+$navbar-dropdown-item-hover-background-color: $dark;
+$navbar-divider-background-color: $primary;
+
+.text {
+  font-family: 'Passion One', cursive;
+}
+
+.hero-foot .container h5 {
+  margin-bottom: 15px;
+}
+
+.navbar-link {
+  background-color: $black !important;
+}
+.navbar-item:hover {
+  transition-duration: 0.5s;
+}
+.Pimage {
+  width: 15%;
+  margin-bottom: 20px;
+}
+
+body {
+  background-color: $black;
+}
+html {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: $black !important;
+}
+
+@media screen and (max-width: 480px)
+{
+  .button {
+    margin-top: 10px !important;
+  }
+}
+
+.Pfunction {
+  flex-wrap: wrap;
+}
+
+
+.hero-foot .wavesContainer img {
+  margin-bottom: -10px;
+  width: 100%;
+  height: auto;
+}
+.hero-foot .wavesContainer {
+  max-width: 100%;
+}
+
+.darkbis {
+  background-color: #484c52 !important;
+  border-color: transparent !important;
+  color: #fff !important;
+}
+
+
+@import "../../node_modules/bulma/bulma.sass";
+//For Edge, IE and Safari
+@include desktop {
+  .navbar-item {
+    &.is-hoverable:hover {
+      .navbar-dropdown {
+        display: block;
+      }
+    }
+  }
+}
